@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: tailscale
+  namespace: tailscale
+data:
+  # TS_ROUTES: "XXX.XXX.XXX.XXX/XX" # Your subnet routers.
+  TS_EXTRA_ARGS: "--advertise-exit-node"
+  TS_STATE_DIR: "/var/lib/tailscale"
